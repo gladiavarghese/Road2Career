@@ -1,0 +1,14 @@
+{
+  "name": "road2career",
+  "version": "1.0.0",
+  "description": "Road2Career - AI Career Roadmap Generator",
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "db:setup": "cd backend && node src/config/setupDb.js",
+    "db:seed": "cd backend && psql -U postgres -d road2career -f src/config/seed.sql"
+  }
+}
